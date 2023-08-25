@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Web Studio</title>
 </head>
 
@@ -24,9 +24,11 @@
                 <a class="logo-first-word-header link" href="./index.html">Web<span
                         class="logo-second-word-header">Studio</span></a>
                 <ul class="list navigation-list">
-                    <li><a class="navigation-menu-selected link" href="./index.html">Studio</a></li>
-                    <li><a class="navigation-menu link" href="./portfolio.html">Portfolio</a></li>
-                    <li><a class="navigation-menu link" href="">Contacts</a></li>
+                    <li class="navigation-menu-item"><a class="navigation-menu-selected link"
+                            href="./index.html">Studio</a></li>
+                    <li class="navigation-menu-item"><a class="navigation-menu link"
+                            href="./portfolio.html">Portfolio</a></li>
+                    <li class="navigation-menu-item"><a class="navigation-menu link" href="">Contacts</a></li>
                 </ul>
             </nav>
             <address class="contacts">
@@ -37,14 +39,14 @@
             </address>
             <button class="mobile-menu-open-button js-open-menu" type="button">
                 <svg class="mobile-menu-open-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-mobile-menu"></use>
+                    <use href="./images/icons.svg#icon-icon-menu-hamburger"></use>
                 </svg>
             </button>
             <div class="mobile-menu-container js-menu-container">
                 <div class="mobile-menu-wrapper">
                     <button class="mobile-menu-close-button js-close-menu" type="button">
                         <svg class="mobile-menu-close-icon" height="8" width="8">
-                            <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+                            <use href="./images/icons.svg#icon-close-modal-button"></use>
                         </svg>
                     </button>
                     <ul class="mobile-menu-list list">
@@ -108,7 +110,7 @@
 
 
     <main>
-        <section class="section-benefits">
+        <section class="section-benefits section-benefits-background-image">
             <div class="container container-hero">
                 <h1 class="main-title">Effective Solutions for Your Business</h1>
                 <button class="main-cta" type="button" data-modal-open>Order Service</button>
@@ -167,24 +169,35 @@
             <div class="container">
                 <h2 class="page-title">What are we doing</h2>
                 <ul class="what-we-are-doing-list list">
-                    <li class="what-we-are-doing-item"><img src="./images/what-are-we-doing-1.jpg"
-                            alt="Help with laptop" width=360 height="300" />
+                    <li class="what-we-are-doing-item">
+                        <img class="what-are-we-doing-image" srcset="./images/what-are-we-doing/what-are-we-doing-1-1x.jpg,
+                            ./images/what-are-we-doing/what-are-we-doing-1-2x.jpg"
+                            src="./images/what-are-we-doing/what-are-we-doing-1-1x.jpg" alt="Help with laptop" width=360
+                            height="300" />
                     </li>
-                    <li class="what-we-are-doing-item"><img src="./images/what-are-we-doing-2.jpg" alt="Help with phone"
+                    <li class="what-we-are-doing-item">
+                        <img class="what-are-we-doing-image" srcset="./images/what-are-we-doing/what-are-we-doing-2-1x.jpg,
+                            ./images/what-are-we-doing/what-are-we-doing-2-2x.jpg"
+                            src="./images/what-are-we-doing/what-are-we-doing-2-1x.jpg" alt="Help with phone"
                             width="360" height="300" />
                     </li>
-                    <li class="what-we-are-doing-item"><img src="./images/what-are-we-doing-3.jpg"
-                            alt="Help with connection" width="360" height="300" />
+                    <li class="what-we-are-doing-item">
+                        <img class="what-are-we-doing-image" srcset="./images/what-are-we-doing/what-are-we-doing-3-1x.jpg,
+                            ./images/what-are-we-doing/what-are-we-doing-3-2x.jpg"
+                            src="./images/what-are-we-doing/what-are-we-doing-3-1x.jpg" alt="Help with connection"
+                            width="360" height="300" />
                     </li>
                 </ul>
             </div>
         </section>
         <section class="section-our-team">
             <div class="container">
-                <h2 class="page-title">Our Team</h2>
+                <h2 class="our-team-title">Our Team</h2>
                 <ul class="our-team-list list">
-                    <li class="member-team"><img src="./images/our-team-1.jpg" alt="Mark Guerrero, product designer"
-                            width="264" height="260" />
+                    <li class="member-team"><img class="our-team-image"
+                            srcset="./images/our-team/our-team-1-1x.jpg, ./images/our-team/our-team-1-2x.jpg"
+                            src="./images/our-team/our-team-1-1x.jpg" alt="Mark Guerrero, product designer" width="264"
+                            height="260" />
                         <div class="member-name">
                             <h3 class="member-name-surname category-title">Mark Guerrero</h3>
                             <p class="member-title main-text">Product Designer</p>
@@ -220,8 +233,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="member-team"><img src="./images/our-team-2.jpg" alt="Tom Ford, frontend developer"
-                            width="264" height="260" />
+                    <li class="member-team"><img class="our-team-image"
+                            srcset="./images/our-team/our-team-2-1x.jpg, ./images/our-team/our-team-2-2x.jpg"
+                            src="./images/our-team/our-team-2-1x.jpg" alt="Tom Ford, frontend developer" width="264"
+                            height="260" />
                         <div class="member-name">
                             <h3 class="member-name-surname category-title">Tom Ford</h3>
                             <p class="member-title main-text">Frontend Developer</p>
@@ -257,8 +272,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="member-team"><img src="./images/our-team-3.jpg" alt="Camila Garcia, Marketing"
-                            width="264" height="260" />
+                    <li class="member-team"><img class="our-team-image"
+                            srcset="./images/our-team/our-team-3-1x.jpg, ./images/our-team/our-team-1-2x.jpg"
+                            src="./images/our-team/our-team-3-1x.jpg" alt="Camila Garcia, Marketing" width="264"
+                            height="260" />
                         <div class="member-name">
                             <h3 class="member-name-surname category-title">Camila Garcia</h3>
                             <p class="member-title main-text">Marketing</p>
@@ -294,8 +311,10 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="member-team"><img src="./images/our-team-4.jpg" alt="Daniel Wilson, UI Designer"
-                            width="264" height="260" />
+                    <li class="member-team"><img class="our-team-image"
+                            srcset="./images/our-team/our-team-4-1x.jpg, ./images/our-team/our-team-4-2x.jpg"
+                            src="./images/our-team/our-team-4-1x.jpg" alt="Daniel Wilson, UI Designer" width="264"
+                            height="260" />
                         <div class="member-name">
                             <h3 class="member-name-surname category-title">Daniel Wilson</h3>
                             <p class="member-title main-text">UI Designer</p>
@@ -336,8 +355,8 @@
             </div>
         </section>
         <section class="customers">
-            <div class="container">
-                <h2 class="page-title">Customers</h2>
+            <div class="customers-container container">
+                <h2 class="customers-title">Customers</h2>
                 <ul class="list customer-list">
                     <li class="customer-list-item">
                         <a class="customer-link link" href=""><svg class="customer-logo" width="104" height="56">
@@ -505,6 +524,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

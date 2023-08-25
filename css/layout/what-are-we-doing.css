@@ -1,0 +1,26 @@
+@media screen and (max-width: 1157px) {
+    .what-we-are-doing {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .what-we-are-doing {
+        padding-bottom: 120px;
+    }
+
+    .page-title {
+        color: var(--dark-navy-ble-color);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+    }
+
+    .what-we-are-doing-list {
+        display: flex;
+        gap: 24px;
+    }
+}

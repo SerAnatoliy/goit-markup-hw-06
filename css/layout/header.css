@@ -1,0 +1,133 @@
+.header {
+    border-bottom: 1px solid var(--cornflofer-accent-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-general {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-menu-item {
+        display: none;
+    }
+}
+
+.logo-first-word-header {
+    color: var(--primary-brand-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 76px;
+}
+
+.logo-second-word-header {
+    color: var(--dark-navy-ble-color);
+}
+
+.navigation-list {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation-menu {
+    color: var(--dark-navy-ble-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-menu:hover,
+.navigation-menu:focus {
+    color: var(--pressed-state-color);
+}
+
+.navigation-menu-selected {
+    color: var(--pressed-state-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-menu-selected::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--pressed-state-color);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.contacts {
+    font-style: normal;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .contacts {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .contacts-list {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1157px) {
+    .contact-info:first-child {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-list {
+        color: var(--body-slate-text-color);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .contacts-list {
+        font-size: 16px;
+        line-height: 1.5;
+        display: inline-block;
+    }
+}
+
+.contacts-list:hover,
+.contacts-list:focus {
+    color: var(--pressed-state-color);
+}

@@ -1,0 +1,126 @@
+.section-our-team {
+    background-color: var(--cloud-light-color);
+}
+
+@media screen and (max-width: 1157px) {
+    .section-our-team {
+        padding: 96px 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .section-our-team {
+        padding: 120px 0;
+    }
+}
+
+.our-team-title {
+    color: var(--dark-navy-ble-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.our-team-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .our-team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .our-team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}
+
+.member-team {
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .member-team {
+        width: calc((100%-24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .member-team {
+        width: calc((100%-72px) / 4);
+    }
+}
+
+.member-name {
+    padding: 32px 0;
+}
+
+.member-name-surname {
+    color: var(--dark-navy-ble-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.member-title {
+    color: var(--body-slate-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-network-team {
+    width: 40px;
+    height: 40px;
+}
+
+.social-network-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-brand-color);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-network-name:hover,
+.social-network-name:focus {
+    background-color: var(--pressed-state-color);
+}
+
+.social-network-icon {
+    fill: var(--cloud-light-color);
+}

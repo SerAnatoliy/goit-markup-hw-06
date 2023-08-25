@@ -5,3 +5,12 @@
 @import './base/section.css';
 
 @import './layout/header.css';
+@import './layout/benefits.css';
+@import './layout/our-values.css';
+@import './layout/what-are-we-doing.css';
+@import './layout/our-team.css';
+@import './layout/customer.css';
+@import './layout/footer.css';
+@import './layout/modal-window.css';
+@import './layout/portfolio.css';
+@import './layout/mobile-menu.css';
