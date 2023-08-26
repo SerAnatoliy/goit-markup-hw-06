@@ -99,17 +99,18 @@
         padding-bottom: 24px;
         display: flex;
         gap: 40px;
+        color: var(--body-slate-text-color);
     }
 }
 
 @media screen and (max-width: 1157px) {
-    .contact-info:first-child {
+    .contact-list-item:first-child {
         margin-bottom: 12px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .contacts-list {
+    .contact-info {
         color: var(--body-slate-text-color);
         font-weight: 400;
         font-size: 12px;
@@ -120,14 +121,14 @@
 }
 
 @media screen and (min-width: 1158px) {
-    .contacts-list {
+    .contact-info {
         font-size: 16px;
         line-height: 1.5;
         display: inline-block;
     }
 }
 
-.contacts-list:hover,
-.contacts-list:focus {
+.contact-info:hover,
+.contact-info:focus {
     color: var(--pressed-state-color);
 }
